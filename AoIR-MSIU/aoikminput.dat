@@ -1,0 +1,25 @@
+param m:=4.000000;#the number of source nodes
+param n:=5.000000;#the total number of all contents
+param alpha:=0.500000;
+param y: 1 2 3 4 5:=
+1 1 0 1 1 0
+2 1 0 0 1 1
+3 1 1 1 1 1
+4 0 1 1 1 0;
+param v: 1 2 3 4 5:=
+1 8 0 8 9 0
+2 6 0 0 9 8
+3 3 4 6 9 6
+4 0 4 7 6 0;
+param t: 1 2 3 4 5:=
+1 2 0 3 4 0
+2 3 0 0 5 6
+3 1 2 3 4 5
+4 0 3 4 5 0;
+param tb: 1 2 3 4 5:=
+1 6 6 6 6 6;
+param r:=
+1 3
+2 3
+3 5
+4 3;
