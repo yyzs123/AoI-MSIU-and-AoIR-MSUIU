@@ -145,6 +145,7 @@ def Experiment2(ns, cs, alpha, ca):
         ax = plt.gca()
         ax.spines['top'].set_visible(False)  # 去掉上边框
         ax.spines['right'].set_visible(False)  # 去掉右边框
+        ax.yaxis.set_major_locator(MultipleLocator(500))
 
         plt.tick_params(labelsize = 10)
         plt.xticks(cs, family = 'Times New Roman', fontweight = 'normal')
@@ -152,7 +153,7 @@ def Experiment2(ns, cs, alpha, ca):
         plt.title(r'{} With $\alpha$ = {:.2f}'.format(No[i], alpha[i]), fontsize = 10, family = 'Times New Roman')
         plt.xlabel('The number of status', fontsize = 10, fontweight = 'normal') #x标签
         plt.ylabel('Overall Revenue', fontsize = 10, fontweight = 'normal') #y标签
-        plt.ylim(0, 4500.0)
+        plt.ylim(0, 5500.0)
         plt.grid(linewidth = 2)
         font = {
             'family': 'Times New Roman',

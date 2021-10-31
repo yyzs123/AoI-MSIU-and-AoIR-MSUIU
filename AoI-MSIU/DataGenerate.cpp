@@ -69,7 +69,7 @@ void createDataset(int ns, int cs, int cacnt)
     for(int ca = 1; ca <= cacnt; ++ca){
         mt19937 gen1(ns * cs * ca + 1), gen2(ns * cs * ca + 2), gen3(ns * cs * ca + 3), gen4(ns * cs * ca + 4), gen5(ns * cs * ca + 5), gen6(ns * cs * ca + 6); //Standard mersenne_twister_engine seeded with rd()
         uniform_real_distribution<> latrand(37.6, 37.8), longrand(-122.5, -122.3);
-        uniform_int_distribution<> trand(1, 20), vmcrand(10, 60), rrand(1, 10);
+        uniform_int_distribution<> trand(15, 30), vmcrand(50, 70), rrand(1, 10);
 
         shuffle(cabid.begin(), cabid.end(), default_random_engine(ns * cs * ca));
         vector<ContentType>ctvec;
